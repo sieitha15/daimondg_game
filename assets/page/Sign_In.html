@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <img src="../img/img-game10.jpg" alt="" class="sig-img" />
+      <div class="overlay"></div>
+      <div class="form-login">
+        <div class="row">
+          <div class="col-7">
+            <img src="../img/img-game9.jpg" alt="" />
+            <h1>WELCOME!</h1>
+            <center>
+              <div id="app"></div>
+            </center>
+          </div>
+          <div class="col-5">
+            <form action="../../index.html">
+              <div class="txt-login">
+                <p class="titled">បង្កើតគណនី</p>
+              </div>
+              <div class="container-signin">
+                <div class="label">
+                  <label for="Email" class="email titled">ឈ្មោះ</label
+                  ><br /><label for="Email" class="email">ត្រកូល</label><br />
+                </div>
+
+                <div class="name">
+                  <input
+                    type="text"
+                    class="first-name titled fn"
+                    id="Email"
+                    maxlength="24"
+                    placeholder="សូមបញ្ចូលនាមខ្លួន"
+                  />
+
+                  <input
+                    type="text"
+                    class="last-name fn"
+                    id="Email"
+                    maxlength="24"
+                    placeholder="សូមបញ្ចូលនាមត្រកូល"
+                  />
+                </div>
+                <label for="Email" class="email">បញ្ចូលអុីមែល</label><br />
+                <input
+                  type="email"
+                  class="box-email fn"
+                  id="Email"
+                  maxlength="24"
+                  placeholder="សូមបញ្ចូលអុីមែល ឬ​ លេខទូរស័ទ្ទ"
+                />
+
+                <div class="txt-password">
+                  <label for="Password" class="password"
+                    >បង្កើតពាក្យសម្ងាត់</label
+                  >
+                </div>
+                <input
+                  type="password"
+                  class="box-password fn"
+                  id="Password"
+                  maxlength="8"
+                  placeholder="សូមបញ្ចូលពាក្យសម្ងាត់"
+                />
+                <div class="logo">
+                  <div class="box-fb">
+                    <div class="logo-icon">
+                      <i class="fa-brands fa-facebook"></i>
+                      <p>Facebook</p>
+                    </div>
+                  </div>
+                  <div class="box-google">
+                    <div class="logo-icon">
+                      <i class="fa-brands fa-google"></i>
+                      <p>Google</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-login">
+                  <button type="submit">ចូលគណនី</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+      var app = document.getElementById("app");
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+      });
+
+      typewriter
+
+        .typeString("<strong>PLASE! CREAT <strong>")
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString("<strong>YOUR ACCOUNT</strong>")
+        .pauseFor(2500)
+        .start();
+    </script>
+  </body>
+</html>
